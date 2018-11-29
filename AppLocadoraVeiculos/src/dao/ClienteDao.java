@@ -99,7 +99,7 @@ public class ClienteDao {
 	}
 	
 	public static boolean incluir(Cliente cliente){
-		String sql = "INSERT INTO TCarro(nome, cpf, telefone, endereco, idade, renda) VALUES (?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO TCliente(nome, cpf, telefone, endereco, idade, renda) VALUES (?, ?, ?, ?, ?, ?)";
 		
 		PreparedStatement ps = null;
 		

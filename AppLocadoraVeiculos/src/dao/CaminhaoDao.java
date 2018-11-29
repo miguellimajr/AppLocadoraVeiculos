@@ -14,7 +14,7 @@ import negocio.Caminhao;;
 public class CaminhaoDao {
 	
 	public static Caminhao obterPorId(int id) {
-		String sql = "SELECT * FROM TCarro WHERE id = ?";
+		String sql = "SELECT * FROM TCaminhao WHERE id = ?";
 		
 		PreparedStatement ps = null;
 		
@@ -51,7 +51,7 @@ public class CaminhaoDao {
 	}
 	
 	public static boolean excluir(int id){
-		String sql = "DELETE FROM TCarro WHERE id = ?";
+		String sql = "DELETE FROM TCaminhao WHERE id = ?";
 		
 		PreparedStatement ps = null;
 		
@@ -72,7 +72,7 @@ public class CaminhaoDao {
 	}
 	
 	public static List<Caminhao> obterLista(){
-		String sql = "SELECT * FROM TCarro ORDER BY nome";		
+		String sql = "SELECT * FROM TCaminhao ORDER BY nome";		
 		List<Caminhao> lista = null;		
 		PreparedStatement ps = null;		
 		try {
@@ -106,7 +106,7 @@ public class CaminhaoDao {
 	}
 	
 	public static boolean incluir(Caminhao caminhao){
-		String sql = "INSERT INTO TCarro(nome, placa, marca, modelo, ano, valorcarro, seguro, eixos, cacamba ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO TCaminhao(nome, placa, marca, modelo, ano, valorcarro, seguro, eixos, cacamba ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		PreparedStatement ps = null;
 		

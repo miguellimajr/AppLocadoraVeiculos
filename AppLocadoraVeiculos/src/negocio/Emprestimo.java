@@ -19,7 +19,7 @@ public class Emprestimo implements Interface{
 	
 	
 	public boolean liberaAluguel() {
-		if (cliente.getRendaMensal() >= (carro.getValorCarro()*0.1)) {
+		if (cliente.getRendaMensal() >= (carro.getValorCarro()*0.05)) {
 			return true;
 		}
 		

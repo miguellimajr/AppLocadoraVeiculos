@@ -8,7 +8,7 @@ public class Caminhao extends Carro {
 	
 
 	public Caminhao() {
-		
+		super();		
 		
 	}	
 		

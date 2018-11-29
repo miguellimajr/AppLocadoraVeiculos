@@ -3,8 +3,8 @@ package negocio;
 public class Cliente implements Interface{
 
 	private int id;
-	private String cpf;
 	private String nome;
+	private String cpf;
 	private String telefone;
 	private String endereco;
 	private int idade;
