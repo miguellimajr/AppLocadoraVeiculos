@@ -6,6 +6,7 @@ import auxiliar.Constante;
 
 public class Emprestimo implements Interface{
 	
+	private int id;
 	private Carro carro;
 	private Cliente cliente;
 	private Calendar data = Calendar.getInstance();
@@ -13,6 +14,11 @@ public class Emprestimo implements Interface{
 	
 		
 	
+	public Emprestimo() {
+		super();
+	}
+
+
 	public float calculaAluguel() {		
 		
 		return ((carro.getValorCarro() + carro.getSeguro())/100)*(1-(Constante.getTxDesconto()/100));
@@ -20,6 +26,13 @@ public class Emprestimo implements Interface{
 	}
 	
 	
+	public Emprestimo(int id, String formaDePagamento) {
+		super();
+		this.id = id;
+		this.formaDePagamento = formaDePagamento;
+	}
+
+
 	public boolean liberaAluguel() {
 		if (cliente.getRendaMensal() >= (carro.getValorCarro()*0.05)) {
 			return true;
@@ -84,6 +97,36 @@ public class Emprestimo implements Interface{
 
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public Calendar getData() {
+		return data;
+	}
+
+
+	public void setData(Calendar data) {
+		this.data = data;
+	}
+
+
+	public String getFormaDePagamento() {
+		return formaDePagamento;
+	}
+
+
+	public void setFormaDePagamento(String formaDePagamento) {
+		this.formaDePagamento = formaDePagamento;
 	}
 
 
