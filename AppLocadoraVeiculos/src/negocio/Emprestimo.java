@@ -6,9 +6,11 @@ import auxiliar.Constante;
 
 public class Emprestimo implements Interface{
 	
-	Carro carro;
-	Cliente cliente;
-	Calendar data = Calendar.getInstance();
+	private Carro carro;
+	private Cliente cliente;
+	private Calendar data = Calendar.getInstance();
+	private String formaDePagamento;
+	
 		
 	
 	public float calculaAluguel() {		
