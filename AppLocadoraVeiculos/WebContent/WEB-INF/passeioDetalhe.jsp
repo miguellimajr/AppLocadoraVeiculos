@@ -14,7 +14,7 @@
 	Passeio c = (Passeio)request.getAttribute("passeio");
 	%>
 
-	<form action="PasseioController" method="get">
+	<form action="PasseioController" method="post">
 		<input type="submit" value="Cadastrar">
 		
 		<hr>

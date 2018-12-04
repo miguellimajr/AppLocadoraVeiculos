@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@page import="negocio.Cliente"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -6,11 +7,19 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
 <title>Clientes Lista</title>
 </head>
 <body>
 	<% 
-	List<Cliente> clientes = (List<Cliente>)request.getAttribute("clientes");
+// 	List<Cliente> clientes = (List<Cliente>)request.getAttribute("clientes");
+	
+	List<Cliente> clientes = new ArrayList<Cliente>();
+	clientes.add(new Cliente(1, "123", "nome", "12345678", "rua tal", 10, 100f));
+	clientes.add(new Cliente(1, "123", "nome", "12345678", "rua tal", 10, 100f));
+	clientes.add(new Cliente(1, "123", "nome", "12345678", "rua tal", 10, 100f));
+	clientes.add(new Cliente(1, "123", "nome", "12345678", "rua tal", 10, 100f));
 	%>
 	
 	<h3>Clientes</h3>

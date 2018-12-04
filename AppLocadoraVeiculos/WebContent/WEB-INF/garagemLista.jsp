@@ -1,30 +1,30 @@
-<%@page import="negocio.Emprestimo"%>
+<%@page import="negocio.Garagem"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
 <meta charset="ISO-8859-1">
-<title>Clientes Lista</title>
+<title>Garagem Lista</title>
 </head>
 <body>
 	<% 
-	List<Emprestimo> emprestimos = (List<Emprestimo>)request.getAttribute("emprestimos");
+	List<Garagem> garagens = (List<Garagem>)request.getAttribute("garagem");
 	%>
 	
-	<h3>Empréstimos</h3>
+	<h3>Garagem</h3>
 	
-	<%if(emprestimos != null) {%>	
+	<%if(garagens != null) {%>	
 	<table border="1">
 		<tr>
 			<th width="150">Forma de Pagamento</th>
 						
 		</tr>
-		<%for(Emprestimo c : emprestimos) {%>		
+		<%for(Garagem c : garagens) {%>		
 		<tr>
-			<td align="center"><%=c.getFormaDePagamento()%></td>
-								
+											
 						
 			<td align="center">
 				<form action="AppController" method="post">

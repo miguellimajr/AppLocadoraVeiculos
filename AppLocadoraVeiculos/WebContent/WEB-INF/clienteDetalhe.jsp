@@ -13,7 +13,7 @@
 	Cliente c = (Cliente)request.getAttribute("cliente");
 	%>
 
-	<form action="ClienteController" method="get">
+	<form action="ClienteController" method="post">
 		<input type="submit" value="Cadastrar">
 		
 		<hr>

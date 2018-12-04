@@ -13,7 +13,7 @@
 	Caminhao c = (Caminhao)request.getAttribute("caminhao");
 	%>
 
-	<form action="CaminhaoController" method="get">
+	<form action="CaminhaoController" method="post">
 		<input type="submit" value="Cadastrar">
 		
 		<hr>

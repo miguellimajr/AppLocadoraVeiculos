@@ -2,6 +2,7 @@
     <wb-module deploy-name="AppLocadoraVeiculos">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/WebContent/WEB-INF"/>
         <property name="context-root" value="AppLocadora"/>
         <property name="java-output-path" value="/AppLocadoraVeiculos/build/classes"/>
     </wb-module>

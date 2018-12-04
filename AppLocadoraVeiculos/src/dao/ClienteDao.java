@@ -9,8 +9,6 @@ import java.util.List;
 import conexao.Conexao;
 import negocio.Cliente;
 
-
-
 public class ClienteDao {
 	
 	public static Cliente obterPorId(int id) {
@@ -69,7 +67,7 @@ public class ClienteDao {
 	}
 	
 	public static List<Cliente> obterLista(){
-		String sql = "SELECT * FROM TCarro ORDER BY nome";		
+		String sql = "SELECT * FROM TCliente ORDER BY nome";		
 		List<Cliente> lista = null;		
 		PreparedStatement ps = null;		
 		try {

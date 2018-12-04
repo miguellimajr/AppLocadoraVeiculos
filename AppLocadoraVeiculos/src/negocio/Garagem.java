@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Garagem implements Interface{
 	
+	int id;
 	Carro carro;
 	List<Carro> carros = new ArrayList<Carro>();
 	Calendar data = Calendar.getInstance();
@@ -58,6 +59,46 @@ public class Garagem implements Interface{
 	public void imprimirTipo() {
 		// TODO Auto-generated method stub
 		
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public Carro getCarro() {
+		return carro;
+	}
+
+
+	public void setCarro(Carro carro) {
+		this.carro = carro;
+	}
+
+
+	public List<Carro> getCarros() {
+		return carros;
+	}
+
+
+	public void setCarros(List<Carro> carros) {
+		this.carros = carros;
+	}
+
+
+	public Calendar getData() {
+		return data;
+	}
+
+
+	public void setData(Calendar data) {
+		this.data = data;
 	}
 
 }

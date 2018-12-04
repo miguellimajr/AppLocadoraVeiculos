@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
 <meta charset="ISO-8859-1">
 <title>Caminhão Lista</title>
 </head>
