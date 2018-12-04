@@ -20,12 +20,6 @@ public class CaminhaoController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int id = Integer.valueOf(request.getParameter("id"));
 		
-		CaminhaoDao.excluir(id);
-		
-		request.setAttribute("clientes", CaminhaoDao.obterLista());
-		
-		request.getRequestDispatcher("caminhaolista.jsp").forward(request, response);
 	}
 }

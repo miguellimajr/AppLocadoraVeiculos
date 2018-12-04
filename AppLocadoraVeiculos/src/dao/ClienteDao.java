@@ -82,7 +82,7 @@ public class ClienteDao {
 							rs.getString("nome"), 
 							rs.getString("cpf"),
 							rs.getString("telefone"),
-							rs.getString("edereco"),														
+							rs.getString("endereco"),														
 							rs.getInt("idade"),
 							rs.getFloat("renda")							
 					)
