@@ -64,7 +64,7 @@ public class EmprestimoDao {
 	}
 	
 	public static List<Emprestimo> obterLista(){
-		String sql = "SELECT * FROM TCaminhao ORDER BY nome";		
+		String sql = "SELECT * FROM TEmprestimo ORDER BY nome";		
 		List<Emprestimo> lista = null;		
 		PreparedStatement ps = null;		
 		try {
@@ -90,7 +90,7 @@ public class EmprestimoDao {
 	}
 	
 	public static boolean incluir(Emprestimo emprestimo){
-		String sql = "INSERT INTO TEmprestimo(pagamento) VALUES (?)";
+		String sql = "INSERT INTO TEmprestimo VALUES (?)";
 		
 		PreparedStatement ps = null;
 		

@@ -1,5 +1,4 @@
 <%@page import="negocio.Caminhao"%>
-<%@page import="negocio.Caminhao"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -21,7 +20,7 @@
 		<tr>
 			<th width="150">Nome</th>
 			<th width="150">Placa</th>
-			<th width="75">Marca</th>
+			<th width="75">Marca </th>
 			<th width="75">Modelo</th>
 			<th width="75">Ano</th>
 			<th width="75">Valor do Carro</th>

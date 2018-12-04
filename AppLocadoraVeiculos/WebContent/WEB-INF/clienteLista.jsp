@@ -39,7 +39,7 @@
 					<input type="hidden" name="id" value="<%=c.getId()%>">
 					<input type="submit" value="Alterar">
 				</form>
-				<form action="UsuarioController" method="post">
+				<form action="ClienteController" method="post">
 					<input type="hidden" name="id" value="<%=c.getId()%>">
 					<input type="submit" value="Excluir">
 				</form>

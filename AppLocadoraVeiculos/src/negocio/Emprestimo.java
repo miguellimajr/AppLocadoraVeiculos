@@ -33,6 +33,11 @@ public class Emprestimo implements Interface{
 	}
 
 
+	public Emprestimo(int int1) {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public boolean liberaAluguel() {
 		if (cliente.getRendaMensal() >= (carro.getValorCarro()*0.05)) {
 			return true;
