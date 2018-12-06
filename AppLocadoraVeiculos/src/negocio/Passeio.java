@@ -25,12 +25,33 @@ public class Passeio extends Carro{
 		this.radio = radio;
 		
 	}
+	
+	public Passeio(String nome, String placa, String marca, String modelo, int ano, float valorCarro, float seguro, String tipodeTeto, String tipoDeBanco, String radio) {
+		super(nome, placa, marca, modelo, ano, valorCarro, seguro);
+		this.tipoDeTeto = tipodeTeto;
+		this.tipoDeBanco = tipoDeBanco;
+		this.radio = radio;
+		
+	}
 
 	public Passeio(String nome, String placa, String marca, String modelo, int ano, float valorCarro, float seguro) {
 		super(nome, placa, marca, modelo, ano, valorCarro, seguro);
 				
 	}
 
+	
+	
+	public void exibe() {
+		
+		super.exibe();
+			
+			System.out.printf("Tipo de Teto: %s\n"
+					+ "Tipo de Bancos: %s\n"
+					+ "Rádio: %s\n\n",
+					tipoDeTeto, tipoDeBanco, radio);			
+								
+		}
+	
 	public String getTipoDeTeto() {
 		return tipoDeTeto;
 	}

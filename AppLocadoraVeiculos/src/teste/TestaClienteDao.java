@@ -1,12 +1,12 @@
 package teste;
 
-import negocio.Cliente;
-import dao.ClienteDao;
+import negocio.*;
+import dao.*;
 
 public class TestaClienteDao {
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		
 		
 		Cliente cliente = new Cliente();
@@ -18,16 +18,38 @@ public class TestaClienteDao {
 		cliente.setIdade(30);
 		cliente.setRendaMensal(500000);	
 		
-		ClienteDao.incluir(cliente);
+		//ClienteDao.incluir(cliente);
 		
 		
 		for (Cliente c: ClienteDao.obterLista()) {
-			c.exibe();
+			c.exibe();		
+		}
 		
-	
+		
+		Passeio passeio = new Passeio("Gol", "ABC-5050", "Volkswagen", "Motor 1.6", 2016, 50000, 1500,"Teto Solar", "Banco de Couro", "Bluetooth");
+		Caminhao caminhao = new Caminhao ("Gol", "ABC-5050", "Volkswagen", "Motor 1.6", 2016, 50000, 1500, 2, "Baú");
+		
+		PasseioDao.incluir(passeio);
+		CaminhaoDao.incluir(caminhao);
 		
 		
-	}
+		for (Passeio p: PasseioDao.obterLista()) {
+			p.exibe();		
+		}
+		
+		for (Caminhao c: CaminhaoDao.obterLista()) {
+			c.exibe();		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 }
 }

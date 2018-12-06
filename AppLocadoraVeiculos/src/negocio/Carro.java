@@ -61,17 +61,11 @@ public abstract class Carro {
 				+"Modelo: %s \n"
 				+"Ano: %d \n"
 				+"Valor do Carro: %.2f \n"
-				+"Valor do Seguro: %.2f \n\n",
-				//+ "Adicionais: ",				
-				nome, placa, marca, modelo,ano, valorCarro,seguro);
-		
-		
-		/*for (int i = 0; i < adicionais.length; i++) {
-			
-			System.out.printf("%s",adicionais[i]);			
-			System.out.printf("%s",(i<(adicionais.length-1)) ? ", " : ".\n\n");
-			
-		}*/					
+				+"Valor do Seguro: %.2f \n",
+				
+								
+				nome, placa, marca, modelo,ano, valorCarro,seguro);		
+							
 	}
 	
 	

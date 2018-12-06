@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.*;
+
 
 public class AppController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -15,17 +17,23 @@ public class AppController extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		//request.setAttribute("usuarios", UsuarioDao.obterLista());
+	
+		String tela = request.getParameter("tela");
 		
-		request.getRequestDispatcher("usuarioLista.jsp").forward(request, response);
+		
+		System.out.printf("%s", tela);
+		
+		request.setAttribute("lista", AppDao.obterLista(tela));
+		
+		request.getRequestDispatcher(tela).forward(request, response);
+		
+		
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int id = Integer.valueOf(request.getParameter("id"));
+	
 		
-		//request.setAttribute("usuario", UsuarioDao.obterPorId(id));
 		
-		request.getRequestDispatcher("usuarioDetalhe.jsp").forward(request, response);
 	}
 }

@@ -25,10 +25,10 @@ public class Cliente implements Interface{
 	
 	
 
-	public Cliente(int id, String cpf, String nome, String telefone, String endereco, int idade, float rendaMensal) {
-		this.id = id;
-		this.cpf = cpf;
+	public Cliente(int id, String nome, String cpf, String telefone, String endereco, int idade, float rendaMensal) {
+		this.id = id;		
 		this.nome = nome;
+		this.cpf = cpf;
 		this.telefone = telefone;
 		this.endereco = endereco;
 		this.idade = idade;
